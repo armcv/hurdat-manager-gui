@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "1.3.1",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "hurdat-manager-gui",
+  "productName": "HURDAT Manager GUI",
+  "version": "0.0.1",
+  "description": "Electron application based on React, React Router, Webpack, React Hot Loader for NOAA Hurricane Database (HURDAT) management",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -52,8 +52,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "HURDAT Manager GUI",
+    "appId": "org.gitfast.HurdatManager",
     "files": [
       "dist/",
       "node_modules/",
@@ -99,19 +99,18 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate",
+      "owner": "hurdat-manager-gui",
+      "repo": "hurdat-manager-gui",
       "private": false
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/armcv/hurdat-manager-gui.git"
   },
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Armando Carracedo Velazquez",
+    "email": "acarracedov@gmail.com"
   },
   "contributors": [
     {
@@ -132,7 +131,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/armcv/hurdat-manager-gui/issues"
   },
   "keywords": [
     "electron",
@@ -146,7 +145,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/armcv/hurdat-manager-gui#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
